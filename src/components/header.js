@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import "./header.scss";
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -23,6 +25,7 @@ const Header = ({ siteTitle }) => (
             color: `white`,
             textDecoration: `none`,
           }}
+          className="title"
         >
           {siteTitle}
         </Link>
